@@ -25,8 +25,8 @@ jobs:
         run: pnpm install
       - name: build & test
         run: |
+          pnpm run lint
           pnpm run build
           pnpm run test
-        #          yarn lint    # linting happens on client side pre-commit hook
         env:
           CI: true

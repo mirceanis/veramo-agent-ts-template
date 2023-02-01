@@ -1,9 +1,7 @@
 import { agent } from './setup.js';
 
-(async () => {
-  const doc = await agent.resolveDid({
-    didUrl: 'did:key:z6MkmbTn4thCFgbRXif7MAN7KwveCyUCQLqSEyHxRCJRmiqP',
-  });
+const doc = await agent.resolveDid({
+  didUrl: 'did:key:z6MkmbTn4thCFgbRXif7MAN7KwveCyUCQLqSEyHxRCJRmiqP',
+});
 
-  console.dir(doc, { depth: 10 });
-})();
+console.dir(doc, { depth: 4 });
