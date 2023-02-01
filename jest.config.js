@@ -1,16 +1,12 @@
-module.exports = {
-  roots: ['<rootDir>/src'],
+/** @type {import('@ts-jest/dist/types').InitialOptionsTsJest} */
+export default {
+  verbose: true,
+  preset: 'ts-jest/presets/default-esm',
+  testEnvironment: 'node',
+  extensionsToTreatAsEsm: ['.ts', '.mts'],
   transform: {
-    '^.+\\.tsx?$': 'ts-jest',
+    '^.+\\.(t)s$': ['ts-jest', { useESM: true }],
+    '^.+\\.(j)s$': 'babel-jest',
   },
-  testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
-  coverageDirectory: "./coverage/",
-  collectCoverageFrom: [
-    "src/**/*.{ts,tsx}",
-    "!src/**/*.d.ts",
-    "!**/node_modules/**"
-  ],
-  testEnvironment: "node",
-  setupFilesAfterEnv: ["jest-extended"]
-}
+  resolver: 'ts-jest-resolver',
+};
