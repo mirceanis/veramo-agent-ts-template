@@ -8,7 +8,7 @@ specifiers:
   '@types/node': 18.11.19
   '@typescript-eslint/eslint-plugin': 5.50.0
   '@typescript-eslint/parser': 5.50.0
-  '@veramo/core': ^4.3.0
+  '@veramo/core': ^5.0.0
   '@veramo/did-resolver': ^4.3.0
   eslint: 8.33.0
   jest: 29.4.1
@@ -20,7 +20,7 @@ specifiers:
   typescript: 4.9.5
 
 dependencies:
-  '@veramo/core': 4.3.0
+  '@veramo/core': 5.0.0
   '@veramo/did-resolver': 4.3.0
   key-did-resolver: 2.3.0
 
@@ -2064,6 +2064,17 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
+  /@veramo/core-types/5.0.0:
+    resolution: {integrity: sha512-aD3mhnKpZ6ygb0W2EbRqLpYOixal04FKOcWPqnDDavKeG5vt2+g/FdHSCftm5cwUnjD3WYGcMibxAjxqqudoaQ==}
+    dependencies:
+      credential-status: 2.0.5
+      debug: 4.3.4
+      did-jwt-vc: 3.1.0
+      did-resolver: 4.0.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
   /@veramo/core/4.3.0:
     resolution: {integrity: sha512-9M4WfW5GNrb+O3Xndm+9HDoAo2JRgKrNC29+d/QzgA5Aosu1w0cY0IYba6FWXPRwpQkCiRI8An4j7/9Tk11E1Q==}
     dependencies:
@@ -2071,6 +2082,16 @@ packages:
       debug: 4.3.4
       did-jwt-vc: 3.1.0
       did-resolver: 4.0.1
+      events: 3.3.0
+      z-schema: 5.0.5
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /@veramo/core/5.0.0:
+    resolution: {integrity: sha512-53JZDqb41FIjI8CQm7nc6gdvuc8JRNXn9yK9nu6zFxdRVM3Zrb+Lj+EucRyhXaViX5mQFYLU988NnDY3ksLqOQ==}
+    dependencies:
+      '@veramo/core-types': 5.0.0
       events: 3.3.0
       z-schema: 5.0.5
     transitivePeerDependencies:
