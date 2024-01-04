@@ -16,7 +16,7 @@
   "dependencies": {
     "@veramo/core": "^5.0.0",
     "@veramo/did-resolver": "^5.0.0",
-    "key-did-resolver": "^2.3.0"
+    "key-did-resolver": "^4.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.23.6",
