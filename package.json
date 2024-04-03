@@ -14,7 +14,7 @@
     "lint": "eslint --fix"
   },
   "dependencies": {
-    "@veramo/core": "^5.0.0",
+    "@veramo/core": "^6.0.0",
     "@veramo/did-resolver": "^5.0.0",
     "key-did-resolver": "^4.0.0"
   },
